@@ -8,6 +8,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Publishing
 Source0:	%{name}-%{version}.tar.gz
+# Source0-md5:	fe4b738a1386906eab8ab955fa90558e
 BuildRequires:	transfig
 Requires:	mpage >= 2.4
 Requires:	LPRng
