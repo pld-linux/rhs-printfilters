@@ -18,7 +18,7 @@ Requires:	diffutils
 Requires:	sed
 Requires:	fileutils
 Conflicts:	libgr-progs < 2.0.9-7
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The rhs-printfilters package contains a set of print filters which are
