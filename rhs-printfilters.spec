@@ -1,12 +1,15 @@
-Summary:	Red Hat print filters, for use with the printtool.
-Summary(pl):	Filtry dla drukarek, do u¿ytku z programem printtool.
+Summary:	Red Hat print filters, for use with the printtool
+Summary(de):	Red-Hat-Druckfiltersystem
+Summary(fr):	Système de filtres d'impression de Red Hat
+Summary(pl):	Filtry dla drukarek, do u¿ytku z programem printtool
+Summary(tr):	Red Hat yazýcý süzgeçleri
 Name:		rhs-printfilters
 Version:	1.73
 Release:	1
 License:	GPL
 Group:		Applications/Publishing
 Group(pl):	Aplikacje/Publikowanie
-Source0:	rhs-printfilters-%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
 Requires:	mpage >= 2.4
 Requires:	LPRng
 Requires:	ghostscript >= 5.10
@@ -16,11 +19,27 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The rhs-printfilters package contains a set of print filters which are
-primarily meant to be used with the Red Hat printtool.  These print
+primarily meant to be used with the Red Hat printtool. These print
 filters provide an easy way for users to handle printing numerous file
 formats.
 
+%description -l de
+Das Red Hat-Druckfiltersystem verarbeitet auf einfache Weise das
+Drucken vieler Dateiformate. Ist vor allem für die Verwendung mit dem
+Druck-Tool von Red Hat gedacht.
+
+%description -l fr
+Les filtres d'impression RedHat offrent une maniére simple de gérer
+l'impression de nombreux formats de fichiers. Ceci est surtout destiné
+a être utilisé avec l'utilitaire RedHat printool.
+
 #%description -l pl
+
+%description -l tr
+Red Hat tarafýndan geliþtirilen bu süzgeçler sayesinde deðiþik
+formatlardaki belgelerin yazýcýya uygun olarak biçimlendirilebilir. Bu
+süzgeçler Red Hat'in printtool yazýlýmý ile kullanýlmak üzere
+geliþtirilmiþlerdir.
 
 %prep
 %setup -q
@@ -42,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz
-%dir /usr/lib/rhs/rhs-printfilters
+%dir %{_libdir}/rhs/rhs-printfilters
 %config(noreplace) %{_libdir}/rhs/rhs-printfilters/printerdb
 %attr(755,root,root) %{_libdir}/rhs/rhs-printfilters/asc-to-printer.fpi
 %attr(755,root,root) %{_libdir}/rhs/rhs-printfilters/asc-to-ps.fpi
