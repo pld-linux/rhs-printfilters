@@ -1,5 +1,5 @@
-Summary:	Red Hat print filters, for use with the printtool.
-Summary(pl):	Filtry do drukarek z Red Hat'a, do u¿ytku z printtool'em
+Summary:	Red Hat print filters, for use with the printtool
+Summary(pl):	Filtry do drukarek z Red Hata, do u¿ytku z printtoolem
 Summary(es):	Sistema de filtro de impresión Red Hat
 Summary(pt_BR):	Sistema de filtro de impressão Red Hat
 Name:		rhs-printfilters
@@ -35,6 +35,12 @@ fácil de manipular la impresión de varios formatos de archivos. Se
 lo hizo, primeramente, para ser usado en conjunto con el RedHat
 printtool.
 
+%description -l pl
+Pakiet rhs-printfilters zawiera zestaw filtrów do drukowania
+przeznaczonych g³ównie do u¿ytku z redhatowym printtoolem. Te filtry
+daj± ³atwy dla u¿ytkowników sposób obs³ugi wydruków plików w ró¿nych
+formatach.
+
 %description -l pt_BR
 O sistema de filtros de impressão Red Hat oferece uma maneira fácil
 de manipular a impressão de vários formatos de arquivos. Feito
@@ -43,14 +49,14 @@ primariamente para ser usado em conjunto com o RedHat printtool.
 %prep
 %setup -q
 
-%build
-
 %install
 rm -rf $RPM_BUILD_ROOT
 
 install -d INSTALL_DIR=$RPM_BUILD_ROOT%{_libdir}/rhs/rhs-printfilters
 %{__make} INSTALLBIN="install -m0755" INSTALLDATA="install -m0644" \
 	INSTALL_DIR=$RPM_BUILD_ROOT install
+
+gzip -9nf README CHANGES
 
 %clean 
 rm -rf $RPM_BUILD_ROOT
@@ -78,7 +84,7 @@ fi
 
 %files
 %defattr(644,root,root,755)
-%doc README CHANGES
+%doc README.gz CHANGES.gz
 %dir %{_libdir}/rhs/rhs-printfilters
 %{_libdir}/rhs/rhs-printfilters/asc-to-printer.fpi
 %{_libdir}/rhs/rhs-printfilters/asc-to-ps.fpi
