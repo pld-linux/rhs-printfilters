@@ -7,10 +7,6 @@ Version:	1.81
 Release:	1
 License:	GPL
 Group:		Applications/Publishing
-Group(de):	Applikationen/Publizieren
-Group(es):	Aplicaciones/Editoración
-Group(pl):	Aplikacje/Publikowanie
-Group(pt_BR):	Aplicações/Editoração
 Source0:	%{name}-%{version}.tar.gz
 BuildRequires:	transfig
 Requires:	mpage >= 2.4
