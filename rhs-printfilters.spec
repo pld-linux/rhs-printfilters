@@ -26,10 +26,9 @@ filters provide an easy way for users to handle printing numerous file
 formats.
 
 %description -l es
-El sistema de filtros de impresión Red Hat nos ofrece una manera
-fácil de manipular la impresión de varios formatos de archivos. Se
-lo hizo, primeramente, para ser usado en conjunto con el RedHat
-printtool.
+El sistema de filtros de impresión Red Hat nos ofrece una manera fácil
+de manipular la impresión de varios formatos de archivos. Se lo hizo,
+primeramente, para ser usado en conjunto con el RedHat printtool.
 
 %description -l pl
 Pakiet rhs-printfilters zawiera zestaw filtrów do drukowania
@@ -38,8 +37,8 @@ daj± ³atwy dla u¿ytkowników sposób obs³ugi wydruków plików w ró¿nych
 formatach.
 
 %description -l pt_BR
-O sistema de filtros de impressão Red Hat oferece uma maneira fácil
-de manipular a impressão de vários formatos de arquivos. Feito
+O sistema de filtros de impressão Red Hat oferece uma maneira fácil de
+manipular a impressão de vários formatos de arquivos. Feito
 primariamente para ser usado em conjunto com o RedHat printtool.
 
 %prep
@@ -54,7 +53,7 @@ install -d INSTALL_DIR=$RPM_BUILD_ROOT%{_libdir}/rhs/rhs-printfilters
 
 gzip -9nf README CHANGES
 
-%clean 
+%clean
 rm -rf $RPM_BUILD_ROOT
 
 %pre
