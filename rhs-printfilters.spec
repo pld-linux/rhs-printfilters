@@ -51,8 +51,6 @@ install -d INSTALL_DIR=$RPM_BUILD_ROOT%{_libdir}/rhs/rhs-printfilters
 %{__make} INSTALLBIN="install -m0755" INSTALLDATA="install -m0644" \
 	INSTALL_DIR=$RPM_BUILD_ROOT install
 
-gzip -9nf README CHANGES
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -79,7 +77,7 @@ fi
 
 %files
 %defattr(644,root,root,755)
-%doc README.gz CHANGES.gz
+%doc README CHANGES
 %dir %{_libdir}/rhs/rhs-printfilters
 %{_libdir}/rhs/rhs-printfilters/asc-to-printer.fpi
 %{_libdir}/rhs/rhs-printfilters/asc-to-ps.fpi
