@@ -4,12 +4,13 @@ Summary(es):	Sistema de filtro de impresión Red Hat
 Summary(pt_BR):	Sistema de filtro de impressão Red Hat
 Name:		rhs-printfilters
 Version:	1.81
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Publishing
 Source0:	%{name}-%{version}.tar.gz
 # Source0-md5:	fe4b738a1386906eab8ab955fa90558e
 BuildRequires:	transfig
+BuildRequires:	netpbm-progs
 Requires:	mpage >= 2.4
 Requires:	LPRng
 Requires:	ghostscript >= 5.10
