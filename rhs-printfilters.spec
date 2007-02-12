@@ -1,7 +1,7 @@
 Summary:	Red Hat print filters, for use with the printtool
-Summary(pl):	Filtry do drukarek z Red Hata, do uøytku z printtoolem
-Summary(es):	Sistema de filtro de impresiÛn Red Hat
-Summary(pt_BR):	Sistema de filtro de impress„o Red Hat
+Summary(pl.UTF-8):   Filtry do drukarek z Red Hata, do u≈ºytku z printtoolem
+Summary(es.UTF-8):   Sistema de filtro de impresi√≥n Red Hat
+Summary(pt_BR.UTF-8):   Sistema de filtro de impress√£o Red Hat
 Name:		rhs-printfilters
 Version:	1.81
 Release:	2
@@ -27,20 +27,20 @@ primarily meant to be used with the Red Hat printtool. These print
 filters provide an easy way for users to handle printing numerous file
 formats.
 
-%description -l es
-El sistema de filtros de impresiÛn Red Hat nos ofrece una manera f·cil
-de manipular la impresiÛn de varios formatos de archivos. Se lo hizo,
+%description -l es.UTF-8
+El sistema de filtros de impresi√≥n Red Hat nos ofrece una manera f√°cil
+de manipular la impresi√≥n de varios formatos de archivos. Se lo hizo,
 primeramente, para ser usado en conjunto con el RedHat printtool.
 
-%description -l pl
-Pakiet rhs-printfilters zawiera zestaw filtrÛw do drukowania
-przeznaczonych g≥Ûwnie do uøytku z redhatowym printtoolem. Te filtry
-daj± ≥atwy dla uøytkownikÛw sposÛb obs≥ugi wydrukÛw plikÛw w rÛønych
+%description -l pl.UTF-8
+Pakiet rhs-printfilters zawiera zestaw filtr√≥w do drukowania
+przeznaczonych g≈Ç√≥wnie do u≈ºytku z redhatowym printtoolem. Te filtry
+dajƒÖ ≈Çatwy dla u≈ºytkownik√≥w spos√≥b obs≈Çugi wydruk√≥w plik√≥w w r√≥≈ºnych
 formatach.
 
-%description -l pt_BR
-O sistema de filtros de impress„o Red Hat oferece uma maneira f·cil de
-manipular a impress„o de v·rios formatos de arquivos. Feito
+%description -l pt_BR.UTF-8
+O sistema de filtros de impress√£o Red Hat oferece uma maneira f√°cil de
+manipular a impress√£o de v√°rios formatos de arquivos. Feito
 primariamente para ser usado em conjunto com o RedHat printtool.
 
 %prep
