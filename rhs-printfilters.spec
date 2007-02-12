@@ -1,7 +1,7 @@
 Summary:	Red Hat print filters, for use with the printtool
-Summary(pl.UTF-8):   Filtry do drukarek z Red Hata, do użytku z printtoolem
-Summary(es.UTF-8):   Sistema de filtro de impresión Red Hat
-Summary(pt_BR.UTF-8):   Sistema de filtro de impressão Red Hat
+Summary(pl.UTF-8):	Filtry do drukarek z Red Hata, do użytku z printtoolem
+Summary(es.UTF-8):	Sistema de filtro de impresión Red Hat
+Summary(pt_BR.UTF-8):	Sistema de filtro de impressão Red Hat
 Name:		rhs-printfilters
 Version:	1.81
 Release:	2
